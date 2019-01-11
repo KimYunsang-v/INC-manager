@@ -17,7 +17,7 @@ exports.join = (req, res) => {
 };
 
 exports.list = (req, res) => {
-    console.log("======inc/user/======get")
+    console.log("======inc/user/== ====get")
     User.find({})
         .then(users => {
             if (!users.length) return res.status(404).send({err:'User not found'});
